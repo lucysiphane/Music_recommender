@@ -32,7 +32,7 @@ score
 
 # In[18]:
 
-
+#visualization of decision tree
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 from sklearn import tree
@@ -50,10 +50,7 @@ tree.export_graphviz(model,out_file='music_recommender.dot',
                                   label='all',
                                     rounded=True,
                                     filled=True)
-                                  
-
-
-# In[20]:
+                                
 
 
 tree.plot_tree(model,feature_names=['age','gender'],
